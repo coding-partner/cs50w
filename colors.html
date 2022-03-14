@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            // change font color to red 
+            document.querySelector('#red').onclick = function(){
+                document.querySelector('#hello').style.color = 'red'
+            }
+            //Change the color to Blue 
+            document.querySelector('#blue').onclick = function(){
+                document.querySelector('#hello').style.color = 'blue'
+            }
+
+            //Change the color to Green
+            document.querySelector('#green').onclick = function(){
+                document.querySelector('#hello').style.color = 'green'
+            }
+
+        })
+    </script>
+
+
+
+</head>
+<body>
+    <h1 id = "hello">Hello</h1>
+    <button id ="red">Red</button>
+    <button id ="blue">Blue</button>
+    <button id ="green">Green</button>
+
+</body>
+</html>
+
+
+<!-- 
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Colors</title>
+     <script>
+         document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('button').forEach(function(button) {
+                button.onclick = function() {
+                    document.querySelector("#hello").style.color = button.dataset.color;
+                }
+            });
+         });
+
+
+                document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('button').forEach(button => {
+                button.onclick = () => {
+                    document.querySelector("#hello").style.color = button.dataset.color;
+                }
+            });
+        });
+
+     </script>
+</head>
+<body>
+    <h1 id="hello">Hello</h1>
+    <button data-color="red">Red</button>
+    <button data-color="blue">Blue</button>
+    <button data-color="green">Green</button>
+</body>
+</html>
+ -->
+
+ <!-- 
+     <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Colors</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector('select').onchange = function() {
+                    document.querySelector('#hello').style.color = this.value;
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <h1 id="hello">Hello</h1>
+        <select>
+            <option value="black">Black</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+        </select>
+
+    </body>
+</html>
+  -->
